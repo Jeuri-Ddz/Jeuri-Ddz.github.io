@@ -1,12 +1,236 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-    <title>El meu site</title>
-    <link rel="stylesheet" href="/assets/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeuri de León · Portafolio</title>
+  <meta name="description" content="Portafolio de Jeuri de León, desarrollador de aplicaciones y videojuegos.">
+  <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-    <h1>Benvingut al meu site!</h1>
-    <img src="/assets/img/Img2.png" alt="Una foto meva" width="200" style="border-radius: 20%;">
+
+  <nav class="navbar">
+    <div class="container">
+      <a href="#" class="nav-brand">jeuri.dev</a>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <ul class="nav-links">
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#tecnologias">Tecnologías</a></li>
+        <li><a href="#proyectos-videojuegos">Proyectos</a></li>
+        <li><a href="#formacion">Formación</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <div class="container">
+
+      <header class="hero">
+        <div class="avatar">JL</div>
+        <div class="hero-text">
+          <h1>Jeuri de León</h1>
+          <div class="role">Desarrollador de Aplicaciones y Videojuegos</div>
+          <div class="location">📍 Badalona, Barcelona</div>
+          <div class="contact-links">
+            <a href="mailto:tucorreo@ejemplo.com">Email</a>
+            <a href="#" target="_blank" rel="noopener">GitHub</a>
+            <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="#">CV</a>
+          </div>
+        </div>
+      </header>
+
+      <section id="sobre-mi">
+        <h2>Sobre mí</h2>
+        <p class="about-text">
+          Soy estudiante de Desarrollo de Aplicaciones Multiplataforma (Grado Superior),
+          especializado en videojuegos. Me muevo entre dos mundos: diseño y programo
+          juegos 2D con estética retro/pixel art, y también trabajo con infraestructura
+          y sistemas por mi formación previa en redes. Me interesa tanto la lógica de
+          gameplay como la arquitectura que hay detrás de un proyecto funcionando de verdad.
+        </p>
+      </section>
+
+      <section id="tecnologias">
+        <h2>Tecnologías</h2>
+        <div class="tech-grid">
+          <span class="tech-pill">HTML</span>
+          <span class="tech-pill">CSS</span>
+          <span class="tech-pill">JavaScript</span>
+          <span class="tech-pill">Python</span>
+          <span class="tech-pill">C#</span>
+          <span class="tech-pill">Unity</span>
+          <span class="tech-pill">Kotlin</span>
+          <span class="tech-pill">Git / GitHub</span>
+        </div>
+      </section>
+
+      <section id="proyectos-videojuegos">
+        <h2>Proyectos — Videojuegos</h2>
+
+        <div class="project-group">
+          <div class="project-card">
+            <div class="project-thumb">imagen<br>pendiente</div>
+            <div class="project-body">
+              <h4>Void Surge</h4>
+              <div class="subtitle">Shooter roguelike multijugador</div>
+              <p>Top-down roguelike con backend Node.js/WebSocket, sistema de tomos y jefe multifase.</p>
+              <div class="project-tags">
+                <span>HTML5</span><span>Node.js</span><span>WebSocket</span><span>Pixel Art</span>
+              </div>
+              <div class="project-links">
+                <a href="#">Repositorio</a>
+                <a href="#">Demo</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-thumb">imagen<br>pendiente</div>
+            <div class="project-body">
+              <h4>Hook Runner</h4>
+              <div class="subtitle">Endless runner con gancho pendular</div>
+              <p>Runner 2D con física de gancho, doble salto y dash. En desarrollo activo, migrando a Unity.</p>
+              <div class="project-tags">
+                <span>Unity</span><span>C#</span><span>Pixel Art</span>
+              </div>
+              <div class="project-links">
+                <a href="#">Repositorio</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-thumb">imagen<br>pendiente</div>
+            <div class="project-body">
+              <h4>Fractured Souls</h4>
+              <div class="subtitle">Lucha 2D PvP</div>
+              <p>5 personajes con movesets propios y mecánica de knockback por porcentaje, estilo Smash Bros.</p>
+              <div class="project-tags">
+                <span>Diseño de juego</span><span>Combate 2D</span>
+              </div>
+              <div class="project-links">
+                <a href="#">Repositorio</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-thumb">imagen<br>pendiente</div>
+            <div class="project-body">
+              <h4>Neon Strike</h4>
+              <div class="subtitle">Fútbol retro 2 jugadores</div>
+              <p>Mecánica drag-and-release, selección de formación y estética CRT/neón.</p>
+              <div class="project-tags">
+                <span>HTML5</span><span>Diseño de juego</span>
+              </div>
+              <div class="project-links">
+                <a href="#">Repositorio</a>
+                <a href="#">Demo</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-thumb">imagen<br>pendiente</div>
+            <div class="project-body">
+              <h4>Chess 3D (Unity)</h4>
+              <div class="subtitle">Ajedrez completo desde cero</div>
+              <p>Patrones Factory, Singleton y Observer. Jaque, jaque mate, enroque y captura al paso implementados.</p>
+              <div class="project-tags">
+                <span>Unity</span><span>C#</span><span>Patrones de diseño</span>
+              </div>
+              <div class="project-links">
+                <a href="#">Repositorio</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="proyectos-software">
+        <h2>Proyectos — Software</h2>
+
+        <div class="project-group">
+         
+        
+
+          <div class="project-card">
+            <div class="project-thumb">imagen<br>pendiente</div>
+            <div class="project-body">
+              <h4>Verbo Libre</h4>
+              <div class="subtitle">App bíblica Android offline</div>
+              <p>App de versículo diario sin publicidad, construida con Kotlin y Jetpack Compose.</p>
+              <div class="project-tags">
+                <span>Kotlin</span><span>Jetpack Compose</span><span>Room</span>
+              </div>
+              <div class="project-links">
+                <a href="#">Repositorio</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experiencia">
+        <h2>Experiencia</h2>
+        <p class="timeline-empty">Próximamente — sección en construcción.</p>
+      </section>
+
+      <section id="formacion">
+        <h2>Formación</h2>
+
+        <div class="timeline-item">
+          <div class="timeline-icon">🎓</div>
+          <div class="timeline-body">
+            <div class="row">
+              <h4>DAM GS — Especialidad Videojuegos</h4>
+              <span class="date">Actualidad</span>
+            </div>
+            <div class="role">Desarrollo de Aplicaciones Multiplataforma, Grado Superior</div>
+            <p>Formación centrada en desarrollo de videojuegos y aplicaciones multiplataforma.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="extra">
+        <h2>Extra</h2>
+        <div class="gallery-grid">
+          <div class="gallery-card">
+            <div class="gallery-thumb">captura pendiente</div>
+            <div class="gallery-caption">Gameplay — por añadir</div>
+          </div>
+          <div class="gallery-card">
+            <div class="gallery-thumb">captura pendiente</div>
+            <div class="gallery-caption">Gameplay — por añadir</div>
+          </div>
+          <div class="gallery-card">
+            <div class="gallery-thumb">captura pendiente</div>
+            <div class="gallery-caption">Gameplay — por añadir</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacto" class="contact-section">
+        <h2>Contacto</h2>
+        <p>¿Quieres hablar sobre un proyecto o una colaboración? Escríbeme directamente.</p>
+        <div class="contact-links">
+          <a href="mailto:tucorreo@ejemplo.com">Email</a>
+          <a href="#" target="_blank" rel="noopener">GitHub</a>
+          <a href="#" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer>
+    <div class="container">
+      Jeuri de León — Portafolio construido con HTML, CSS y JavaScript.
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
-
